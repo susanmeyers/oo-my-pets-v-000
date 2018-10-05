@@ -1,10 +1,9 @@
 class Fish
   
-  attr_accessor :fish, :mood
+  attr_accessor :mood
   attr_reader :name
   
   def initialize(name)
-    @fish = fish
     @name = name
     @mood = "nervous"
   end
