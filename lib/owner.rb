@@ -2,7 +2,7 @@ require 'pry'
 class Owner
   @@all = []
   
-  attr_accessor :pets, :owner, :name
+  attr_accessor :pets, :owner, :name, :mood
   attr_reader :species
   
   def initialize(species)
@@ -40,8 +40,10 @@ class Owner
     pets[:dogs] << Dog.new(name)
   end
   
-  def walk_dogs
-    # #binding.pry
+  def walk_dogs(name)
+    pets[:dogs].mood
+    
+    
     # Dog.each do |dog|
     # end
       
