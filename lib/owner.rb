@@ -59,7 +59,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.all.mood = "nervous"
+    @pets.mood.all = "nervous"
   end
 end
     
