@@ -69,10 +69,6 @@ class Owner
   end
   
   def list_pets
-    binding.pry
-    owner.buy.fish.count
-    owner.buy.dog.count
-    owner.buy.cat.count
     owner.list
     
   end
