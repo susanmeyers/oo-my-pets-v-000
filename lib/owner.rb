@@ -58,17 +58,17 @@ class Owner
     end
   end
   
- 1) Owner instance methods #sell_pets can sell all its pets, which make them nervous
-     Failure/Error:
-       pets[:fishes, :cats, :dogs].collect do |fish, cat, dog|
-         fish.mood = "nervous"
-         cat.mood = "nervous"
-         dog.mood = "nervous"
-       end
 
-     ArgumentError:
-       wrong number of arguments (given 3, expected 1)
-  
+  def sell_pet
+    pets[:fishes, :cats, :dogs].collect do |fish, cat, dog|
+      fish.mood = "nervous"
+      cat.mood = "nervous"
+      dog.mood = "nervous"
+      end
+  end
+end
+
+   
       
     
     
