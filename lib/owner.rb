@@ -66,6 +66,7 @@ class Owner
     end
     animal.clear_all
     end
+  end
 end
 
    
