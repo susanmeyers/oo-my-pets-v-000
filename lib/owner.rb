@@ -69,6 +69,10 @@ class Owner
   end
   
   def list_pets
+    self.buy.fish
+    self.buy.dog
+    self.buy.cat
+    
     
 end
 
