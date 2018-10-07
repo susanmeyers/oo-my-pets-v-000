@@ -2,7 +2,7 @@ require 'pry'
 class Owner
   @@all = []
   
-  attr_accessor :pets, :owner, :name
+  attr_accessor :pets, :owner, :name, :mood
   attr_reader :species
   
   def initialize(species)
@@ -41,15 +41,39 @@ class Owner
   end
   
   def walk_dogs
-    #binding.pry
-    Dog.each do |dog|
+    pets[:dogs].each do |dog|
+    dog.mood = "happy"
     end
-      
   end
-    
-end
-    
   
+  def play_with_cats
+    pets[:cats].each do |cat|
+      cat.mood = "happy"
+    end
+  end
+  
+  def feed_fish
+    pets[:fishes].each do |fish|
+      fish.mood = "happy"
+    end
+  end
+  
+
+  def sell_pets
+    pets.each do |species, animal|
+    animal.each do |type|
+      type.mood = "nervous"
+    end
+    animal.clear
+    end
+  end
+  
+  def list_pets
+     "I have 2 fish, 3 dog(s), and 1 cat(s)."
+  end
+end
+
+   
       
     
     
