@@ -65,6 +65,7 @@ class Owner
       type.mood = "nervous"
     end
     end
+    pets.clear_all
   end
 end
 
