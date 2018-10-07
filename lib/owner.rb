@@ -63,6 +63,7 @@ class Owner
       fish.mood = "nervous"
       cat.mood = "nervous"
       dog.mood = "nervous"
+    end
   end
 end
     
