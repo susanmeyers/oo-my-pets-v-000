@@ -70,9 +70,9 @@ class Owner
   
   def list_pets
     binding.pry
-    self.buy.fish
-    self.buy.dog
-    self.buy.cat
+    owner.buy.fish
+    owner.buy.dog
+    owner.buy.cat
     
   end
     
