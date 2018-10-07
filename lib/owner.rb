@@ -72,6 +72,7 @@ class Owner
     self.buy.fish
     self.buy.dog
     self.buy.cat
+  end
     
     
 end
