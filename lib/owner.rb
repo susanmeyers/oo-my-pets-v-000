@@ -59,7 +59,10 @@ class Owner
   end
   
   def sell_pets
-    @pets.mood.all = "nervous"
+    pets[:fishes, :cats, :dogs].collect do |fish, cat, dog|
+      fish.mood = "nervous"
+      cat.mood = "nervous"
+      dog.mood = "nervous"
   end
 end
     
