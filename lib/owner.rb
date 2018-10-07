@@ -69,10 +69,11 @@ class Owner
   end
   
   def list_pets
+    binding.pry
     self.buy.fish
     self.buy.dog
     self.buy.cat
-    binding.pry
+    
   end
     
     
